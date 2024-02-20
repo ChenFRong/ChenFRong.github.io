@@ -7,9 +7,9 @@ import smtplib
 from email.mime.text import MIMEText
 app=Flask(__name__)
 app.config["SECRET_KEY"]="quanhoangduong"
-server = 'LAPTOP-FF387IJ3\HOANGQUAN'
-database = 'Account'
-username = 'quan'
+server = 'DESKTOP-EB3LI3D\MSSQLSERVER02'
+database = 'database'
+username = 'tnhung'
 password = '123456'
 connection_string = f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};DATABASE={database};UID={username};PWD={password};'
 conn = pyodbc.connect(connection_string)
